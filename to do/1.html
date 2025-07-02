@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dynamic To-Do Tracker</title>
+  <link rel="stylesheet" href="2.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>📆 My Tasks for <span id="dateDisplay"></span></h1>
+    
+    <div class="date-picker">
+      <input type="date" id="taskDate" />
+    </div>
+
+    <div id="dropdownGroup">
+  <select class="taskDropdown" id="task1">
+    <option value="">Task 1: Select</option>
+    <option value="Read a chapter">Read a chapter</option>
+    <option value="Go for a walk">Go for a walk</option>
+    <option value="Code JavaScript">Code JavaScript</option>
+    <option value="Sketch design">Sketch design</option>
+    <option value="Meditate">Meditate</option>
+  </select>
+
+  <select class="taskDropdown" id="task2">
+    <option value="">Task 2: Select</option>
+    <option value="Write journal">Write journal</option>
+    <option value="Organize files">Organize files</option>
+    <option value="Sketch UI">Sketch UI</option>
+    <option value="Learn CSS grid">Learn CSS grid</option>
+    <option value="Listen to podcast">Listen to podcast</option>
+  </select>
+
+  <select class="taskDropdown" id="task3">
+    <option value="">Task 3: Select</option>
+    <option value="Debug JS">Debug JS</option>
+    <option value="Drink water">Drink water</option>
+    <option value="Plan slideshow">Plan slideshow</option>
+    <option value="Explore async">Explore async</option>
+    <option value="Walk with music">Walk with music</option>
+  </select>
+
+  <select class="taskDropdown" id="task4">
+    <option value="">Task 4: Select</option>
+    <option value="Stretch">Stretch</option>
+    <option value="Design PPT">Design PPT</option>
+    <option value="Try new shortcut">Try new shortcut</option>
+    <option value="Fix registry">Fix registry</option>
+    <option value="Code cleanup">Code cleanup</option>
+  </select>
+
+  <select class="taskDropdown" id="task5">
+    <option value="">Task 5: Select</option>
+    <option value="Read quotes">Read quotes</option>
+    <option value="Color theme test">Color theme test</option>
+    <option value="PowerPoint polish">PowerPoint polish</option>
+    <option value="CSS experiments">CSS experiments</option>
+    <option value="Journal reflection">Journal reflection</option>
+  </select>
+  
+  <button id="saveTasks">Save Day Plan</button>
+  <p id="statusMessage" style="color: green; display: none;">✔️ Tasks saved!</p>
+
+</div>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="3.js"></script>
+</body>
+</html>
